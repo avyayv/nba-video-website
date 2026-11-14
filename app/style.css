@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@font-face {
+  font-family: Manrope;
+  src: url("/fonts/sans.ttf") format("truetype");
+  font-weight: 400 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Barlow;
+  src: url("/fonts/display.ttf") format("truetype");
+  font-weight: 700 800;
+  font-display: swap;
+}
+@theme {
+  --font-sans: Manrope, Arial, sans-serif;
+  --font-display: Barlow, Impact, sans-serif;
+  --color-paper: #f4f3ec;
+  --color-ink: #202b26;
+  --color-muted: #788078;
+  --color-line: #dedfd5;
+  --color-orange: #e8522c;
+  --color-forest: #1b2c25;
+}
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a,
+select {
+  touch-action: manipulation;
+}
+button:not(:disabled),
+select {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+button,
+input,
+select,
+a {
+  outline-offset: 5px;
+}
+::selection {
+  background: #f5b59c;
+  color: #172720;
+}
+select {
+  color: inherit;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: condensed;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.enter {
+  animation: rise 0.45s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

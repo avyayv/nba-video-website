@@ -136,3 +136,11 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Courtside
+/node_modules/
+/dist/
+/.artifacts/
+/data/*.sqlite3*
+__pycache__/
+.env*
