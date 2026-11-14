@@ -4,7 +4,7 @@ A small NBA clip search app built on recent ESPN highlights. Throwaway example; 
 
 ## What it is
 
-This is an NBA clip browser that I first worked on in 2019. It was built around a third-party clip source and hosted on Google Cloud. When that source went away and hosting was shut off for cost, the project went dormant. This version brings it back as a full rewrite in the same repository. It searches recent publisher highlights from ESPN's public feed. It is not a copy of the original code: the legacy `frontend/` and `backend/` directories are kept for reference only.
+This is an NBA clip browser that I first worked on in 2020/21. It was built around a third-party clip source and hosted on Google Cloud. When that source went away and hosting was shut off for cost, the project went dormant. This version brings it back as a full rewrite in the same repository. It searches recent publisher highlights from ESPN's public feed. It is not a copy of the original code: the legacy `frontend/` and `backend/` directories are kept for reference only.
 
 ## Cost analysis
 
@@ -28,7 +28,7 @@ The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful 
 - `tests/`: Playwright end-to-end tests
 - `data/seed.json`: clip metadata from ESPN (no video files)
 - `deploy/`, `Dockerfile`, `compose.yml`: container build and deploy script
-- `frontend/`, `backend/`: legacy 2021 code, not built
+- `frontend/`, `backend/`: legacy 2020/21 code, not built
 
 ## Notes
 
