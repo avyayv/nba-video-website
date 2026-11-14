@@ -1,0 +1,9 @@
+.git
+node_modules
+frontend
+backend
+.artifacts
+data/*.sqlite3*
+__pycache__
+dist
+.env*
