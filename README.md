@@ -6,18 +6,6 @@ A small NBA clip search app built on recent ESPN highlights. Throwaway example; 
 
 This is an NBA clip browser that I first worked on in 2019. It was built around a third-party clip source and hosted on Google Cloud. When that source went away and hosting was shut off for cost, the project went dormant. This version brings it back as a full rewrite in the same repository. It searches recent publisher highlights from ESPN's public feed. It is not a copy of the original code: the legacy `frontend/` and `backend/` directories are kept for reference only.
 
-## Run
-
-Requires Node 22+ and Python 3.11+.
-
-```sh
-npm ci
-npm test       # python unit tests in server/
-npm run build  # vite build to dist/
-npm run sync   # refresh data/seed.json from ESPN (SYNC_DAYS narrows the date range)
-npm run test:e2e  # Playwright; needs a running app or BASE_URL
-```
-
 ## Cost analysis
 
 The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful Searchable Website`, 95 model steps). The same session priced three ways. Dollar figures are list-price equivalents metered by Dari on subscription keys, not necessarily amounts billed.
@@ -45,3 +33,15 @@ The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful 
 ## Notes
 
 Videos stream from ESPN. Courtside is not affiliated with the NBA or ESPN. Fonts (Manrope, Barlow Condensed) are SIL OFL and included in `public/fonts/`.
+
+## Run
+
+Requires Node 22+ and Python 3.11+.
+
+```sh
+npm ci
+npm test       # python unit tests in server/
+npm run build  # vite build to dist/
+npm run sync   # refresh data/seed.json from ESPN (SYNC_DAYS narrows the date range)
+npm run test:e2e  # Playwright; needs a running app or BASE_URL
+```
