@@ -1,6 +1,6 @@
 # nba-video-website
 
-A small NBA clip search app built on recent ESPN highlights. Throwaway example; not maintained for real use.
+A small NBA clip search app built on recent ESPN highlights. Not maintained.
 
 ## What it is
 
@@ -16,11 +16,6 @@ The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful 
 | Every step on `gpt-6.1-sol` | $3.54 (approx.) | 52% |
 | Every step on `gpt-6-astra` (top model) | $23.77 | 93% |
 
-- Routed mix: 53 steps on `sol` (all high effort) and 42 on `luna` (41 high, 1 low).
-- The all-`sol` figure uses fitted per-token rates with about 3.5% error, so treat it as approximate.
-- The all-`astra` figure uses the same method and matches an unrelated session that ran entirely on `astra` to the cent.
-- A separate Claude Code session that updated docs and merged these changes cost about $0.31 and is not part of the build.
-
 ## Layout
 
 - `app/`: React/Tailwind frontend
@@ -32,7 +27,7 @@ The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful 
 
 ## Notes
 
-Videos stream from ESPN. Courtside is not affiliated with the NBA or ESPN. Fonts (Manrope, Barlow Condensed) are SIL OFL and included in `public/fonts/`.
+Videos stream from ESPN. Not affiliated with the NBA or ESPN. 
 
 ## Run
 
