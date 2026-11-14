@@ -1,12 +1,12 @@
-# Courtside
+# nba-video-website
 
 A small NBA clip search app built on recent ESPN highlights. Throwaway example; not maintained for real use.
 
 ## What it is
 
-This is an NBA clip browser that I first worked on in 2020/21. It was built around a third-party clip source and hosted on Google Cloud. When that source went away and hosting was shut off for cost, the project went dormant. This version brings it back as a full rewrite in the same repository. It searches recent publisher highlights from ESPN's public feed. It is not a copy of the original code: the legacy `frontend/` and `backend/` directories are kept for reference only.
+This is an NBA clip browser that I first worked on in 2020/21, where the idea was that I would use the NBA API to pull every single clip, and make them super easily searchable. Unfortunately it looks like the NBA took down the API, but I asked Codex using Dari Router to rebuild the app. 
 
-## Cost analysis
+## Cost Analysis
 
 The app was rebuilt in one Dari Codex session (`Recreate and Deploy a Beautiful Searchable Website`, 95 model steps). The same session priced three ways. Dollar figures are list-price equivalents metered by Dari on subscription keys, not necessarily amounts billed.
 
